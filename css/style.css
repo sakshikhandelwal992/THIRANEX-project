@@ -1,0 +1,89 @@
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Task List */
+
+#taskList{
+    list-style: none;
+    padding: 0;
+}
+
+/*  for Each Task */
+
+#taskList li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #ffffff;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    transition: 0.3s ease;
+}
+
+#taskList li:hover{   /* when move cursor */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Task Text */
+
+#taskList span{
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Buttons */
+
+#taskList button{
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Edit Button */
+
+.edit-btn{      /*for class */
+    background: #4f46e5;
+    color: white;
+}
+
+.edit-btn:hover{
+    background: #3730a3;
+}
+
+/* Delete Button */
+
+.delete-btn{
+    background: #ef4444;
+    color: white;
+}
+
+.delete-btn:hover{
+    background: #b91c1c;
+}
+
+/* Checkbox */
+
+.complete-checkbox{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
