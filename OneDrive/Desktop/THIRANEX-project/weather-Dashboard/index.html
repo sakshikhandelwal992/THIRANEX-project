@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">  <!-- wrapper to keep all the parts inside it-->
+        <h1>Weather Dashboard</h1>
+<!-- this div class for input of city name and search button-->
+    <div class="search-box">
+
+    <input
+        type="text"
+        id="city-input"
+        placeholder="Enter The city name"
+    >
+
+    <button id="search-btn">
+        Search
+    </button>
+
+    </div>
+
+<!-- thi div class  assigned for actual weather information -->
+    <div class="weather-card">
+         <!-- given id to everyone to make javascript powerful-->
+         <!--We assign unique IDs so that JavaScript can easily locate and update each weather value dynamically after receiving data from the Weather API.--> 
+    <h2 id="city-name">City Name</h2>
+
+    <p id="temperature">Temperature: --°C</p>
+
+    <p id="humidity">Humidity: --%</p>
+
+    <p id="wind-speed">Wind Speed: -- km/h</p>
+
+    <p id="weather-condition">Condition: --</p>
+
+    </div>
+
+</div>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

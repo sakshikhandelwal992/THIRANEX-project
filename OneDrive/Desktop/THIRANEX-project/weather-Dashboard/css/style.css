@@ -1,0 +1,55 @@
+*{
+    margin: 0;  /* remove margin means remove by default space b/t elements */
+    padding: 0; /* space inside an element we have removed */
+    box-sizing: border-box;  /* It makes width and height calculations much easier.*/
+}
+
+body{
+    font-family: Arial, sans-serif;  /* Arial or sans-serif font used*/
+    background-color: #e3f2fd;
+
+    display: flex;   /* Flexbox makes alignment easy.*/
+    justify-content: center; /*It centers items horizontally (on the main axis).*/
+    align-items: center; /*It centers items vertically (on the cross axis).*/
+
+    min-height: 100vh;  /*vh-> viewport height it decide the browser window  */
+}
+
+.container{   /* main part visible differently*/
+    width: 400px;
+    background-color: white;
+    padding: 30px;  /* space inside the container*/
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* elevated(raised) from the background*/
+    text-align: center; /*centers the text inside the container.*/
+}
+.container h1{   /*Decendant selector*/
+    color: #1565c0;
+    margin-bottom: 25px;  /* space outside the element -> creates space below the heading.-> If we remove it, the search box will move closer to the heading because there will no longer be any space below the heading.*/
+    font-size: 32px;
+}
+
+.search-box{
+    display: flex;  /* for layout control*/
+    gap: 10px;  /* b/t input and button --> B/t flrx children*/
+    margin-bottom: 25px; 
+}
+
+/* for input box */
+#city-input{
+    flex :1;   /*The button should remain its normal size.But the input box should grow and take all the remaining space. */
+    padding: 12px;  /*Makes the input taller and more comfortable to type in.*/
+    font-size: 16px;
+    border: 2px solid #90caf9;
+    border-radius: 8px;
+    outline: none;  /*When you click inside an input, browsers show a focus outline.--> outline is for accessibility.*/
+}
+/* for search button */
+#search-btn{
+    background-color: #1565c0;
+    transition: 0.3s;
+}
+
+#search-btn:hover{  /*:hover means:->"Apply these styles when the mouse pointer is over the element."*/
+    background-color: #0d47a1;
+}
